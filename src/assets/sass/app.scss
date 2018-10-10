@@ -1,0 +1,71 @@
+body { background: #f2f2f2 }
+
+#app {
+  background: #f2f2f2;
+
+  h1.heading {
+    margin-bottom: 4em;
+    position: relative;
+  }
+
+  h3.subheading {
+    margin: 2em 0 1em;
+    border-bottom: 1px solid #536C8A;
+  }
+
+  code {
+    padding: .8em 1.5em;
+    border-radius: 3px;
+  }
+
+  .output-box {
+    background: #5a5a5a;
+    color: #fbfbfb;
+    padding: .7em 1em .5em;
+    border-radius: 3px;
+    font-size: .9em;
+    margin-top: 3em;
+
+    span { color: #9FB0C3 }
+  }
+
+  .trigger-notification {
+    text-align: center;
+    text-transform: uppercase;
+    margin: 1em 0;
+    display: block;
+    color: #6096D8;
+    cursor: pointer;
+  }
+
+  .param {
+    color: #9FB0C3;
+    font-size: .9em;
+
+    span {
+      color: #6096D8;
+      font-size: 1.2em;
+      margin-bottom: .5em;
+    }
+  }
+  
+  .big-block {
+    height: 100em;
+  }
+
+  .prefill {
+    position: fixed;
+    bottom: 1em;
+    right: 5em;
+  }
+
+  .open-modal {
+    display: table;
+    margin: 2em auto 0;
+  }
+  
+  app-avatar conichi-avatar {
+    display: block;
+    margin: 2em auto 6em;
+  }
+}

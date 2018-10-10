@@ -1,0 +1,4 @@
+<div class="checkbox" *ngFor="let option of options" [class.checked]="checked(option?.value)" (click)="toggleValue(option?.value)">
+  <fa name="check"></fa>
+  {{ option?.label }}
+</div>

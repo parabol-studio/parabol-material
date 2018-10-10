@@ -1,0 +1,63 @@
+<div id="app">
+  <conichi-sidebar>
+    <conichi-sidebar-menu>
+      <conichi-sidebar-user [session]="session"></conichi-sidebar-user>
+
+      <conichi-sidebar-header>Design</conichi-sidebar-header>
+      <a (click)="selection = 'styleguide'">Styleguide <span>WIP</span></a>
+
+      <conichi-sidebar-header>Layouts</conichi-sidebar-header>
+      <a (click)="selection = 'sidebar'">Sidebar</a>
+      <a (click)="selection = 'footer'">Footer</a>
+
+      <conichi-sidebar-header>Inputs</conichi-sidebar-header>
+      <a (click)="selection = 'text'">Text Input</a>
+      <a (click)="selection = 'textarea'">Textarea Input</a>
+      <a (click)="selection = 'date'">Datepicker</a>
+      <a (click)="selection = 'checkbox'">Checkbox</a>
+      <a (click)="selection = 'checkbox-group'">Checkbox Group</a>
+      <a (click)="selection = 'radio'">Radio</a>
+      <a (click)="selection = 'currency'">Currency</a>
+      <a (click)="selection = 'select'">Select</a>
+      <a (click)="selection = 'slider'">Slider</a>
+      <a (click)="selection = 'select-button'">Select Button</a>
+
+      <conichi-sidebar-header>Elements</conichi-sidebar-header>
+      <a (click)="selection = 'modal'">Modal Box</a>
+      <a (click)="selection = 'notification'">Notification</a>
+      <a (click)="selection = 'loading'">Loading Screen</a>
+      <a (click)="selection = 'pending'">Pending</a>
+      <a (click)="selection = 'reservation'">Reservation</a>
+      <a (click)="selection = 'notice'">Notice</a>
+      <a (click)="selection = 'progress'">Progress</a>
+    </conichi-sidebar-menu>
+  </conichi-sidebar>
+
+  <conichi-sidebar-content>
+    <h1 class="heading">Conichi Material</h1>
+
+    <app-styleguide *ngIf="selection === 'styleguide'"></app-styleguide>
+
+    <app-text *ngIf="selection === 'text'"></app-text>
+    <app-textarea *ngIf="selection === 'textarea'"></app-textarea>
+    <app-datepicker *ngIf="selection === 'date'"></app-datepicker>
+    <app-checkbox *ngIf="selection === 'checkbox'"></app-checkbox>
+    <app-checkbox-group *ngIf="selection === 'checkbox-group'"></app-checkbox-group>
+    <app-radio *ngIf="selection === 'radio'"></app-radio>
+    <app-currency *ngIf="selection === 'currency'"></app-currency>
+    <app-select *ngIf="selection === 'select'"></app-select>
+    <app-slider *ngIf="selection === 'slider'"></app-slider>
+    <app-modal *ngIf="selection === 'modal'"></app-modal>
+    <app-notification *ngIf="selection === 'notification'"></app-notification>
+    <app-loading *ngIf="selection === 'loading'"></app-loading>
+    <app-pending *ngIf="selection === 'pending'"></app-pending>
+    <app-reservation *ngIf="selection === 'reservation'"></app-reservation>
+    <app-notice *ngIf="selection === 'notice'"></app-notice>
+    <app-select-button *ngIf="selection === 'select-button'"></app-select-button>
+    <app-progress *ngIf="selection === 'progress'"></app-progress>
+    <app-sidebar *ngIf="selection === 'sidebar'"></app-sidebar>
+    <app-footer *ngIf="selection === 'footer'"></app-footer>
+    <app-hero *ngIf="selection === 'hero'"></app-hero>
+    <app-avatar *ngIf="selection === 'avatar'"></app-avatar>
+  </conichi-sidebar-content>
+</div>

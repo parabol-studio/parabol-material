@@ -1,0 +1,72 @@
+conichi-text {
+  display: block;
+
+  .group {
+    position: relative;
+    margin: .5em 0;
+
+    label {
+      @include position(absolute, .2em null null 0);
+      @include transition(all 0.2s ease);
+      font-size: .7em;
+      color: $colorDarkGrey; 
+      pointer-events: none;
+    }
+
+    input {
+      @include transition(all 0.2s ease);
+      background: transparent;
+      color: $colorDarkGrey; 
+      font-size: 1em;
+      padding: 1.5em 0 0;
+      border: none;
+      border-bottom: 2px solid rgba($colorMediumGrey, .6);
+      outline: none;
+      
+      &.masked::selection { background: transparent }
+
+      &:active,
+      &:focus {
+        color: lighten($colorDarkGrey, 5%);
+        background: $colorBackground;
+        border-bottom: 2px solid $colorPrimaryCorp;
+      }
+
+      &:active + label,
+      &:focus + label { color: $colorPrimaryCorp }
+
+      &:active + .mask-container .input-mask .carat, { border-right: 1px solid $colorDarkGrey; }
+      &:focus + .mask-container .input-mask .carat { border-right: 1px solid $colorDarkGrey; }
+    }
+
+    .mask-container {
+      @include position(absolute, null 0 .3em 0);
+      background: $colorBackground;
+      pointer-events: none;
+
+      .input-mask span {
+        position: relative;
+        opacity: .5;
+        z-index: 9999;
+
+        &.char { opacity: 1 }
+        &.carat {
+          @include animation(blink 1s ease infinite);
+          @include position(relative, -1px null null null);
+        }
+      }
+    }
+
+    .view-password {
+      @include position(absolute, null 0 0 null);
+      @include size(1.2em 1.6em);
+      cursor: pointer;
+    }
+  }
+
+  @keyframes blink{
+    0%{ opacity: 0; }
+    50%{ opacity: 1; }
+    100%{ opacity: 0; }
+  }
+}

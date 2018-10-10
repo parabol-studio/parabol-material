@@ -1,0 +1,32 @@
+conichi-notification {
+  .error, .success,  {
+    @include position(fixed, 0 50% null null);
+    @include animation-name(fadeOut);
+    @include animation-fill-mode(forwards);
+    @include animation-duration(1s);  
+    @include animation-delay(2s);
+    width: 30em;
+    margin-right: -15em;
+    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 3px;
+    color: $colorOffWhite;
+    padding: .8em 1.5em;
+    text-align: center;
+    z-index: 999;
+  }
+
+  .error {
+    background: rgba(242, 97, 97, .8);
+    border: 1px solid $colorErrorRed;
+  }
+
+  .success {
+    background: rgba(64, 178, 146, .8);
+    border: 1px solid $colorSuccessGreen;
+  }
+
+  @include keyframes(fadeOut) {
+    from { opacity: 1 }
+    to { opacity: 0 }
+  }
+}

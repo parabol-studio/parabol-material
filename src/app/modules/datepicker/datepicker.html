@@ -1,0 +1,58 @@
+<div class="input-container" (click)="openDatepicker = true">
+  <conichi-text placeholder="{{ placeholder }}" [(model)]="dateInput"></conichi-text>
+  <fa name="calendar" class="calendar"></fa>
+</div>
+
+<conichi-modal *ngIf="openDatepicker">
+  <modal-container>
+    <modal-content>
+      <div class="selection" *ngIf="!displayTime">
+        <div class="header">
+          <conichi-select-button placeholder="Month" [options]="monthsOptions" [(model)]="month"></conichi-select-button>
+          <conichi-select-button placeholder="Year" [options]="yearOptions" [(model)]="year"></conichi-select-button>
+        </div>
+
+        <div class="weekdays">
+          <div class="weekday">Sun</div>
+          <div class="weekday">Mon</div>
+          <div class="weekday">Tue</div>
+          <div class="weekday">Wed</div>
+          <div class="weekday">Thu</div>
+          <div class="weekday">Fri</div>
+          <div class="weekday">Sat</div>
+        </div>
+
+        <div class="content">
+          <div class="days" *ngFor="let offset of monthStartOffset">&nbsp;</div>
+          <div class="days" *ngFor="let day of daysArray" (click)="submitDate(day, false)">{{ day }}</div>
+        </div>
+      </div>
+
+      <div class="selection time" *ngIf="displayTime">
+        <div class="header">
+          <h2>{{ i18n?.material_datepicker_select_time || 'Select Time' }}</h2>
+        </div>
+
+        <span>{{ hour || '00' }}:{{ minute || '00' }}</span>
+
+        <div>
+          <div class="half">
+            <conichi-select-button [placeholder]="i18n?.material_datepicker_hour || 'Hour'"
+                                   [options]="hoursArray"
+                                   (click)="checkTime()"
+                                   [(model)]="hour">
+            </conichi-select-button>
+          </div>
+
+          <div class="half">
+            <conichi-select-button [placeholder]="i18n?.material_datepicker_minute || 'Minute'"
+                                   [options]="minutesArray"
+                                   (click)="checkTime()"
+                                   [(model)]="minute">
+            </conichi-select-button>
+          </div>
+        </div>
+      </div>
+    </modal-content>
+  </modal-container>
+</conichi-modal>

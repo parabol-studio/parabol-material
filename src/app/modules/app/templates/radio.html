@@ -1,0 +1,39 @@
+<h2>Radio</h2>
+
+<div class="inner-container">
+  <conichi-radio [(model)]="data"
+                 [options]="radio_options"
+                 keys="label_alt, value_alt">
+  </conichi-radio>
+
+  <p class="output-box"><span>Output:</span> {{ data }}</p>
+</div>
+
+<div class="outer-container">
+  <h3 class="subheading">Usage</h3>
+
+  <pre><code highlight>
+<![CDATA[
+<conichi-radio [options]="radio_options"
+               keys="label_alt, value_alt"
+               [(model)]="data">
+</conichi-radio>
+]]>
+</code></pre>
+
+  <h3 class="subheading">Parameters</h3>
+
+  <p class="param">
+    <span>options (required)</span><br>Import Collection with label and value to be used to construct the radio buttons.
+  </p>
+
+  <p class="param">
+    <span>keys</span><br>Specify the names of the keys, as a comma seperated list, which will be assigned to the label and value of the radio buttons (default: 'label, value').
+  </p>
+
+  <p class="param">
+    <span>model</span><br>Used for 2 way data binding.
+  </p>
+
+  <conichi-checkbox class="prefill" label="Prefill input" value="true" [(model)]="prefill"></conichi-checkbox>
+</div>

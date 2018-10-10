@@ -1,0 +1,36 @@
+<h2>Checkbox</h2>
+
+<div class="inner-container">
+  <conichi-checkbox label="Click me!" value="clicked" [(model)]="data"></conichi-checkbox>
+
+  <p class="output-box"><span>Output:</span> {{ data }}</p>
+</div>
+
+<div class="outer-container">
+  <h3 class="subheading">Usage</h3>
+
+  <pre><code highlight>
+<![CDATA[
+<conichi-checkbox label="Click me!"
+                  value="clicked"
+                  [(model)]="data">
+</conichi-checkbox>
+]]>
+</code></pre>
+
+  <h3 class="subheading">Parameters</h3>
+
+  <p class="param">
+    <span>label (required)</span><br>Used to specify the placeholder which will be used as the checkbox label.
+  </p>
+
+  <p class="param">
+    <span>value (required)</span><br>Used as the value which will be returned if checkbox is checked.
+  </p>
+
+  <p class="param">
+    <span>model</span><br>Used for 2 way data binding.
+  </p>
+
+  <conichi-checkbox class="prefill" label="Prefill input" value="true" [(model)]="prefill"></conichi-checkbox>
+</div>

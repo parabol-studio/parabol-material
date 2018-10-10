@@ -1,0 +1,41 @@
+<h2>Select Button</h2>
+
+<div class="inner-container">
+  <conichi-select-button placeholder="Select" [(model)]="data"></conichi-select-button>
+
+  <p class="output-box"><span>Output:</span> {{ data }}</p>
+</div>
+
+<div class="outer-container">
+  <h3 class="subheading">Usage</h3>
+
+  <pre><code highlight>
+<![CDATA[
+<conichi-select-button placeholder="Select"
+                       [options]="select_options"
+                       keys="label_alt, value_alt"
+                       [(model)]="data">
+</conichi-select-button>
+]]>
+</code></pre>
+
+  <h3 class="subheading">Parameters</h3>
+
+  <p class="param">
+    <span>placeholder</span><br>Used to specify the placeholder which will be used as the text input label (default: 'Select').
+  </p>
+
+  <p class="param">
+    <span>options</span><br>Import Collection with label and value to be used to construct the radio buttons. If no options are specified the default options will be a numeric range between 0 and 10.
+  </p>
+
+  <p class="param">
+    <span>keys</span><br>Specify the names of the keys, as a comma seperated list, which will be assigned to the label and value of the select options.
+  </p>
+
+  <p class="param">
+    <span>model</span><br>Used for 2 way data binding.
+  </p>
+
+  <conichi-checkbox class="prefill" label="Prefill input" value="true" [(model)]="prefill"></conichi-checkbox>
+</div>

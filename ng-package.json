@@ -1,0 +1,26 @@
+{
+  "$schema": "./node_modules/ng-packagr/ng-package.schema.json",
+  "ngPackage": {
+    "lib": {
+      "entryFile": "public_api.ts"
+    }
+  },
+  "whitelistedNonPeerDependencies": ["."],
+  "lib": {
+    "entryFile": "public_api.ts",
+    "externals": {
+      "lodash": "xor",
+      "lodash": "find",
+      "lodash": "filter",
+      "moment": "moment",
+      "jquery": "jquery"
+    },
+    "globals": {
+      "lodash": "xor",
+      "lodash": "find",
+      "lodash": "filter",
+      "moment": "moment",
+      "jquery": "jquery"
+    }
+  }
+}

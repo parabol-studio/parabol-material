@@ -1,0 +1,33 @@
+<div class="group">
+  <input *ngIf="type !== 'password'"
+         type="text"
+         name="{{ placeholder | lowercase }}"
+         (keyup)="emit($event)"
+         (focus)="emit($event)"
+         [class.masked]="mask && !isMobile"
+         [(ngModel)]="model"
+         autocorrect="off"
+         autocapitalize="none"
+         spellcheck="false"
+         #input>
+
+  <input *ngIf="type === 'password'"
+         type="password"
+         name="{{ placeholder | lowercase }}"
+         (keyup)="emit($event)"
+         (focus)="emit($event)"
+         [class.masked]="mask && !isMobile"
+         [(ngModel)]="model"
+         autocorrect="off"
+         autocapitalize="none"
+         spellcheck="false"
+         #input>
+
+  <div class="mask-container" *ngIf="mask && !isMobile">
+    <div class="input-mask" #maskLayer></div>
+  </div>
+
+  <label>{{ placeholder }}</label>
+
+  <fa name="eye" *ngIf="controlType === 'password'" (click)="showPassword()" class="view-password"></fa>
+</div>

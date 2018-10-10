@@ -1,0 +1,5 @@
+<div class="slider-container">
+  <label>{{ placeholder }}</label>
+  <div class="output">{{ prefix }}{{ model }}{{ suffix }}</div>
+  <input type="range" min="{{ min }}" max="{{ max }}" value="{{ model }}" (input)="emit($event)">
+</div>

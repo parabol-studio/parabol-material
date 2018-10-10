@@ -1,0 +1,6 @@
+<div *ngIf="type === 'confirm'" class="confirm-label" (click)="emit('submit')">{{ label }}</div>
+
+<div *ngIf="type === 'prompt'" class="prompt">
+  <div class="cancel button outline smaller" (click)="emit('cancel')">{{ i18n?.button_label_cancel || 'Cancel' }}</div>
+  <div class="confirm button smaller" (click)="emit('submit')">{{ label }}</div>
+</div>

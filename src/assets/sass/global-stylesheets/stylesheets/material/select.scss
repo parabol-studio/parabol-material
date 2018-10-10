@@ -1,0 +1,72 @@
+conichi-select {
+  .container {
+    position: relative;
+    cursor: pointer;
+    height: 3.4em;
+    border-bottom: 2px solid rgba(43, 55, 68, 0.6);
+    
+    label {
+      @include position(absolute, .8em null null 0);
+      @include transition(all 0.2s ease);
+      font-size: .7em;
+      color: $colorDarkGrey; 
+      pointer-events: none;
+    }
+    
+    input {
+      @include position(absolute, 0 0 -.2em 0);
+      color: transparent;
+      background: none;
+      outline: none;
+      border: none;
+      cursor: pointer;
+      text-indent: -100000em;
+    }
+    
+    .display-value {
+      @include position(absolute, 0 0 0 0);
+      padding-top: 2em;
+    }
+    
+    .dropdown-arrow {
+      @include position(absolute, null .2em .5em null);
+      color: $colorDarkGrey;
+    }
+    
+    &.active {
+      border-bottom: 2px solid $colorPrimaryCorp;
+      
+      label { color: $colorPrimaryCorp }
+    }
+
+    .dropdown-box {
+      @include position(absolute, 3em 0 null 0);
+      box-shadow: 0 3px 6px rgba(0, 0, 0, .1), 0 3px 6px rgba(0, 0, 0, .2);
+      background: $colorOffWhite;
+      max-height: 20em;
+      overflow-y: scroll;
+      -ms-overflow-style: scrollbar;
+      z-index: 9;
+
+      .option {
+        padding: .7em 1em;
+        color: $colorDarkGrey;
+        border-bottom: 1px solid $colorLightGrey;
+
+        &:hover {
+          background: $colorPrimaryCorp;
+          color: $colorOffWhite;
+        }
+
+        &:last-child { border: none }
+      }
+
+      p {
+        color: $colorDarkGrey;
+        padding: .9em 0;
+        margin: 0;
+        text-align: center;
+      }
+    }
+  }
+}

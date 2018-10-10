@@ -1,0 +1,31 @@
+<h2>Textarea Input</h2>
+
+<div class="inner-container">
+  <conichi-textarea placeholder="Description" [(model)]="data"></conichi-textarea>
+
+  <p class="output-box"><span>Output:</span> {{ data }}</p>
+</div>
+
+<div class="outer-container">
+  <h3 class="subheading">Usage</h3>
+
+  <pre><code highlight>
+<![CDATA[
+<conichi-textarea placeholder="Description"
+                  [(model)]="data">
+</conichi-textarea>
+]]>
+</code></pre>
+
+  <h3 class="subheading">Parameters</h3>
+
+  <p class="param">
+    <span>placeholder (required)</span><br>Used to specify the placeholder which will be used as the text input label.
+  </p>
+
+  <p class="param">
+    <span>model</span><br>Used for 2 way data binding.
+  </p>
+
+  <conichi-checkbox class="prefill" label="Prefill input" value="true" [(model)]="prefill"></conichi-checkbox>
+</div>

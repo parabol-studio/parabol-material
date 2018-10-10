@@ -1,0 +1,9 @@
+<div class="select-button-container">
+  <a class="button smaller" (click)="showDropdown = !showDropdown">{{ model || placeholder }}</a>
+
+  <div class="select-button-dropdown" *ngIf="showDropdown">
+    <div class="option"
+         *ngFor="let option of options"
+         (click)="select(option?.value)">{{ option?.label }}</div>
+  </div>
+</div>

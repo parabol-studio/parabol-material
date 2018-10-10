@@ -1,0 +1,33 @@
+<h2>Sidebar Layout</h2>
+<p class="center">You are looking at it</p>
+
+<div class="outer-container">
+  <h3 class="subheading">Usage</h3>
+
+  <pre><code highlight>
+<![CDATA[
+<conichi-sidebar collapsed="true">
+  <conichi-sidebar-menu>
+    <conichi-sidebar-user [session]="session"></conichi-sidebar-user>
+
+    <conichi-sidebar-header>Profile</conichi-sidebar-header>
+    <a routerLink="/profile">Your data</a>
+  </conichi-sidebar-menu>
+</conichi-sidebar>
+
+<conichi-sidebar-content>
+  Page content goes here
+</conichi-sidebar-content>
+]]>
+</code></pre>
+
+  <h3 class="subheading">Parameters</h3>
+
+  <p class="param">
+    <span>collapsed</span><br>Specify whether you want the sidebar to be collapsed by default. (Default: false)
+  </p>
+
+  <p class="param">
+    <span>session</span><br> Input the user session to the conichi-sidebar-user component.
+  </p>
+</div>

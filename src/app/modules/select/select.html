@@ -1,0 +1,14 @@
+<div class="container" [class.active]="openDropdown">
+  <div (click)="focusInput($event)">
+    <label>{{ placeholder }}</label>
+    <div class="display-value">{{ displayValue }}</div>
+    <input type="text" spellcheck="false" (focus)="focusInput($event)">
+    <span class="dropdown-arrow">&#9662;</span>
+  </div>
+
+  <div class="dropdown-box" *ngIf="openDropdown">
+    <div class="option" *ngFor="let option of options" (click)="select(option)">
+      {{ option.label }}
+    </div>
+  </div>
+</div>

@@ -1,0 +1,4 @@
+<div class="radio-button" *ngFor="let option of options" (click)="emit(option.value)">
+  <input [id]="option?.value" type="radio" [name]="option?.value" [class.checked]="model === option?.value">
+  <label [for]="option?.value">{{ option?.label }}</label>
+</div>

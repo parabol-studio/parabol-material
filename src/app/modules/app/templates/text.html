@@ -1,0 +1,41 @@
+<h2>Text Input</h2>
+
+<div class="inner-container">
+  <conichi-text placeholder="Name" [(model)]="data" type="password"></conichi-text>
+
+  <p class="output-box"><span>Output:</span> {{ data }}</p>
+</div>
+
+<div class="outer-container">
+  <h3 class="subheading">Usage</h3>
+
+  <pre><code highlight>
+<![CDATA[
+<conichi-text placeholder="Name"
+              type="password"
+              mask="DD/MM/YYYY"
+              [(model)]="data">
+</conichi-text>
+]]>
+</code></pre>
+
+  <h3 class="subheading">Parameters</h3>
+
+  <p class="param">
+    <span>placeholder (required)</span><br>Used to specify the placeholder which will be used as the text input label.
+  </p>
+
+  <p class="param">
+    <span>type</span><br>Used to specify the input type (e.g. 'password'). Default is 'text'.
+  </p>
+
+  <p class="param">
+    <span>model</span><br>Used for 2 way data binding.
+  </p>
+
+  <p class="param">
+    <span>mask</span><br>Applies mask to input field
+  </p>
+
+  <conichi-checkbox class="prefill" label="Prefill input" value="true" [(model)]="prefill"></conichi-checkbox>
+</div>

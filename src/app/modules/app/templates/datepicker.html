@@ -1,0 +1,51 @@
+<h2>Datepicker</h2>
+
+<div class="inner-container">
+  <conichi-datepicker placeholder="Select Date" years="future" [(model)]="data"></conichi-datepicker>
+
+  <p class="output-box"><span>Output:</span> {{ data }}</p>
+</div>
+
+<div class="outer-container">
+  <h3 class="subheading">Usage</h3>
+
+  <pre><code highlight>
+<![CDATA[
+<conichi-datepicker placeholder="Select Date"
+                    [i18n]="i18n"
+                    years="future"
+                    time="true"
+                    offset="16"
+                    [(model)]="data">
+</conichi-datepicker>
+]]>
+</code></pre>
+
+  <h3 class="subheading">Parameters</h3>
+
+  <p class="param">
+    <span>placeholder (required)</span><br>Used to specify the placeholder which will be used as the text input label.
+  </p>
+  
+  <p class="param">
+    <span>i18n (required)</span><br>Set the translations for this component
+  </p>
+
+  <p class="param">
+    <span>years</span><br>Define if the years should represent the past or the future (default 'past')
+  </p>
+
+  <p class="param">
+    <span>time</span><br>Set to 'true' if you want to be able to select time also.
+  </p>
+
+  <p class="param">
+    <span>offset</span><br>Specify if there should be an offset to the range of years (only if years are set to 'past').
+  </p>
+
+  <p class="param">
+    <span>model</span><br>Used for 2 way data binding.
+  </p>
+
+  <conichi-checkbox class="prefill" label="Prefill input" value="true" [(model)]="prefill"></conichi-checkbox>
+</div>
