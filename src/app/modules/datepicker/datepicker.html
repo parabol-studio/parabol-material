@@ -30,14 +30,14 @@
 
       <div class="selection time" *ngIf="displayTime">
         <div class="header">
-          <h2>{{ i18n?.material_datepicker_select_time || 'Select Time' }}</h2>
+          <h2>Select Time</h2>
         </div>
 
         <span>{{ hour || '00' }}:{{ minute || '00' }}</span>
 
         <div>
           <div class="half">
-            <parabol-select-button [placeholder]="i18n?.material_datepicker_hour || 'Hour'"
+            <parabol-select-button placeholder="Hour"
                                    [options]="hoursArray"
                                    (click)="checkTime()"
                                    [(model)]="hour">
@@ -45,7 +45,7 @@
           </div>
 
           <div class="half">
-            <parabol-select-button [placeholder]="i18n?.material_datepicker_minute || 'Minute'"
+            <parabol-select-button placeholder="Minute"
                                    [options]="minutesArray"
                                    (click)="checkTime()"
                                    [(model)]="minute">

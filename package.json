@@ -1,6 +1,6 @@
 {
   "name": "parabol-material",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "license": "MIT",
   "scripts": {
     "dev": "ng serve --port 5000 --open",

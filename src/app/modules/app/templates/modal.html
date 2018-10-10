@@ -27,7 +27,7 @@
       <p>This is a model box.</p>
     </modal-content>
 
-    <modal-footer type="prompt" (model)="modal = $event" [i18n]="i18n" (onConfirm)="cl('success')"></modal-footer>
+    <modal-footer type="prompt" (model)="modal = $event" (onConfirm)="cl('success')"></modal-footer>
   </modal-container>
 </parabol-modal>
 ]]>
@@ -41,10 +41,6 @@
 
   <p class="param">
     <span>model</span><br>Use this to hide the modal box again.
-  </p>
-
-  <p class="param">
-    <span>i18n (required)</span><br>Set the translations for this component
   </p>
 
   <p class="param">
