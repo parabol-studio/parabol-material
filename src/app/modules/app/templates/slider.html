@@ -1,11 +1,11 @@
 <h2>Slider</h2>
 
 <div class="inner-container">
-  <conichi-slider placeholder="Radius"
+  <parabol-slider placeholder="Radius"
                   min="0"
                   max="200"
                   suffix=" meters"
-                  [(model)]="data"></conichi-slider>
+                  [(model)]="data"></parabol-slider>
 
   <p class="output-box"><span>Output:</span> {{ data }}</p>
 </div>
@@ -15,12 +15,12 @@
 
   <pre><code highlight>
 <![CDATA[
-<conichi-slider placeholder="Radius"
+<parabol-slider placeholder="Radius"
                 min="0"
                 max="200"
                 suffix=" meters"
                 [(model)]="data">
-</conichi-slider>
+</parabol-slider>
 ]]>
 </code></pre>
 
@@ -50,5 +50,5 @@
     <span>model</span><br>Used for 2 way data binding.
   </p>
 
-  <conichi-checkbox class="prefill" label="Prefill input" value="true" [(model)]="prefill"></conichi-checkbox>
+  <parabol-checkbox class="prefill" label="Prefill input" value="true" [(model)]="prefill"></parabol-checkbox>
 </div>

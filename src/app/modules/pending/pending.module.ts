@@ -3,11 +3,11 @@ import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 // Import custom components
-import { ConichiPendingComponent } from './pending.component';
+import { ParabolPendingComponent } from './pending.component';
 
 
 /*
-* @NgModule: ConichiPendingModule
+* @NgModule: ParabolPendingModule
 *
 * An NgModule is a class adorned with the @NgModule decorator function. @NgModule takes a metadata
 * object that tells Angular how to compile and run module code. It identifies the module's own
@@ -17,8 +17,8 @@ import { ConichiPendingComponent } from './pending.component';
 
 @NgModule({
   imports: [ BrowserModule ],
-  exports: [ ConichiPendingComponent ],
-  declarations: [ ConichiPendingComponent ],
+  exports: [ ParabolPendingComponent ],
+  declarations: [ ParabolPendingComponent ],
   schemas: [ CUSTOM_ELEMENTS_SCHEMA ]
 })
-export class ConichiPendingModule { }
+export class ParabolPendingModule { }

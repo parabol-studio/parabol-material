@@ -1,7 +1,7 @@
 <h2>Text Input</h2>
 
 <div class="inner-container">
-  <conichi-text placeholder="Name" [(model)]="data" type="password"></conichi-text>
+  <parabol-text placeholder="Name" [(model)]="data" type="password"></parabol-text>
 
   <p class="output-box"><span>Output:</span> {{ data }}</p>
 </div>
@@ -11,11 +11,11 @@
 
   <pre><code highlight>
 <![CDATA[
-<conichi-text placeholder="Name"
+<parabol-text placeholder="Name"
               type="password"
               mask="DD/MM/YYYY"
               [(model)]="data">
-</conichi-text>
+</parabol-text>
 ]]>
 </code></pre>
 
@@ -37,5 +37,5 @@
     <span>mask</span><br>Applies mask to input field
   </p>
 
-  <conichi-checkbox class="prefill" label="Prefill input" value="true" [(model)]="prefill"></conichi-checkbox>
+  <parabol-checkbox class="prefill" label="Prefill input" value="true" [(model)]="prefill"></parabol-checkbox>
 </div>

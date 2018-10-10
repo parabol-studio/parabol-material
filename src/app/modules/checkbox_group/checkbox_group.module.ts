@@ -3,7 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AngularFontAwesomeModule } from 'angular-font-awesome';
 
 // Import custom components
-import { ConichiCheckboxGroupComponent } from './checkbox_group.component';
+import { ParabolCheckboxGroupComponent } from './checkbox_group.component';
 
 
 @NgModule({
@@ -11,8 +11,8 @@ import { ConichiCheckboxGroupComponent } from './checkbox_group.component';
     BrowserModule,
     AngularFontAwesomeModule
   ],
-  exports: [ ConichiCheckboxGroupComponent ],
-  declarations: [ ConichiCheckboxGroupComponent ],
+  exports: [ ParabolCheckboxGroupComponent ],
+  declarations: [ ParabolCheckboxGroupComponent ],
   schemas: [ CUSTOM_ELEMENTS_SCHEMA ]
 })
-export class ConichiCheckboxGroupModule { }
+export class ParabolCheckboxGroupModule { }

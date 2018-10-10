@@ -1,7 +1,7 @@
 <h2>Checkbox</h2>
 
 <div class="inner-container">
-  <conichi-checkbox label="Click me!" value="clicked" [(model)]="data"></conichi-checkbox>
+  <parabol-checkbox label="Click me!" value="clicked" [(model)]="data"></parabol-checkbox>
 
   <p class="output-box"><span>Output:</span> {{ data }}</p>
 </div>
@@ -11,10 +11,10 @@
 
   <pre><code highlight>
 <![CDATA[
-<conichi-checkbox label="Click me!"
+<parabol-checkbox label="Click me!"
                   value="clicked"
                   [(model)]="data">
-</conichi-checkbox>
+</parabol-checkbox>
 ]]>
 </code></pre>
 
@@ -32,5 +32,5 @@
     <span>model</span><br>Used for 2 way data binding.
   </p>
 
-  <conichi-checkbox class="prefill" label="Prefill input" value="true" [(model)]="prefill"></conichi-checkbox>
+  <parabol-checkbox class="prefill" label="Prefill input" value="true" [(model)]="prefill"></parabol-checkbox>
 </div>

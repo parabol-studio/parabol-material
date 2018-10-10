@@ -3,20 +3,20 @@ import { Component, Input, Output, EventEmitter, AfterViewChecked, ChangeDetecto
 
 
 /*
-* @Component: ConichiSelectButtonComponent
+* @Component: ParabolSelectButtonComponent
 *
 * Components are the main way we build and specify elements and logic on the page, through both
 * custom elements and attributes that add functionality to our existing components.
 * 
-* This component is used to build Conichi Material Select component.
+* This component is used to build Parabol Material Select component.
 */
 
 @Component({
-  selector: 'conichi-select-button',
+  selector: 'parabol-select-button',
   templateUrl: './select-button.html'
 })
 
-export class ConichiSelectButtonComponent implements AfterViewChecked {
+export class ParabolSelectButtonComponent implements AfterViewChecked {
   public showDropdown: boolean;
 
   @Output() modelChange = new EventEmitter();

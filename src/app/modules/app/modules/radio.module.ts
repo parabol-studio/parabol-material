@@ -3,8 +3,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { HighlightModule } from 'ngx-highlightjs';
 
 // Import custom modules
-import { ConichiCheckboxModule } from '../../checkbox/checkbox.module';
-import { ConichiRadioModule } from '../../radio/radio.module';
+import { ParabolCheckboxModule } from '../../checkbox/checkbox.module';
+import { ParabolRadioModule } from '../../radio/radio.module';
 
 // Import custom components
 import { RadioComponent } from '../components/radio.component';
@@ -13,8 +13,8 @@ import { RadioComponent } from '../components/radio.component';
 @NgModule({
   imports: [
     BrowserModule,
-    ConichiCheckboxModule,
-    ConichiRadioModule,
+    ParabolCheckboxModule,
+    ParabolRadioModule,
     HighlightModule.forRoot({ theme: 'color-brewer' })
   ],
   exports: [ RadioComponent ],

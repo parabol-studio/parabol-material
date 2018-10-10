@@ -1,6 +1,5 @@
 export * from './src/app/modules/checkbox/checkbox.module';
 export * from './src/app/modules/checkbox_group/checkbox_group.module';
-export * from './src/app/modules/currency/currency.module';
 export * from './src/app/modules/datepicker/datepicker.module';
 export * from './src/app/modules/radio/radio.module';
 export * from './src/app/modules/text/text.module';
@@ -11,9 +10,5 @@ export * from './src/app/modules/modal/modal.module';
 export * from './src/app/modules/notification/notification.module';
 export * from './src/app/modules/loading/loading.module';
 export * from './src/app/modules/pending/pending.module';
-export * from './src/app/modules/reservation/reservation.module';
-export * from './src/app/modules/notice/notice.module';
 export * from './src/app/modules/select-button/select-button.module';
-export * from './src/app/modules/progress/progress.module';
 export * from './src/app/modules/sidebar/sidebar.module';
-export * from './src/app/modules/footer/footer.module';

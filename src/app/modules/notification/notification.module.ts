@@ -3,11 +3,11 @@ import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 // Import custom components
-import { ConichiNotificationComponent } from './notification.component';
+import { ParabolNotificationComponent } from './notification.component';
 
 
 /*
-* @NgModule: ConichiNotificationModule
+* @NgModule: ParabolNotificationModule
 *
 * An NgModule is a class adorned with the @NgModule decorator function. @NgModule takes a metadata
 * object that tells Angular how to compile and run module code. It identifies the module's own
@@ -19,8 +19,8 @@ import { ConichiNotificationComponent } from './notification.component';
 
 @NgModule({
   imports: [ BrowserModule ],
-  exports: [ ConichiNotificationComponent ],
-  declarations: [ ConichiNotificationComponent ],
+  exports: [ ParabolNotificationComponent ],
+  declarations: [ ParabolNotificationComponent ],
   schemas: [ CUSTOM_ELEMENTS_SCHEMA ]
 })
-export class ConichiNotificationModule { }
+export class ParabolNotificationModule { }

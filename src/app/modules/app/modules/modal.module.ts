@@ -3,7 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { HighlightModule } from 'ngx-highlightjs';
 
 // Import custom modules
-import { ConichiModalModule } from '../../modal/modal.module';
+import { ParabolModalModule } from '../../modal/modal.module';
 
 // Import custom components
 import { ModalComponent } from '../components/modal.component';
@@ -12,7 +12,7 @@ import { ModalComponent } from '../components/modal.component';
 @NgModule({
   imports: [
     BrowserModule,
-    ConichiModalModule,
+    ParabolModalModule,
     HighlightModule.forRoot({ theme: 'color-brewer' })
   ],
   exports: [ ModalComponent ],

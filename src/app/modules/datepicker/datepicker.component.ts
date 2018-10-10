@@ -1,6 +1,5 @@
 // Import Angular modules
 import { Component, Input, Output, EventEmitter, AfterViewChecked, ChangeDetectorRef, ElementRef } from '@angular/core';
-import { I18n } from '../../services/interfaces.service';
 
 // Import npm modules
 import range from 'lodash-es/range';
@@ -11,20 +10,20 @@ const moment = moment_;
 
 
 /*
-* @Component: ConichiDatepickerComponent
+* @Component: ParabolDatepickerComponent
 *
 * Components are the main way we build and specify elements and logic on the page, through both
 * custom elements and attributes that add functionality to our existing components.
 * 
-* This component is used to build Conichi Material Datepicker.
+* This component is used to build Parabol Material Datepicker.
 */
 
 @Component({
-  selector: 'conichi-datepicker',
+  selector: 'parabol-datepicker',
   templateUrl: './datepicker.html'
 })
 
-export class ConichiDatepickerComponent implements AfterViewChecked {
+export class ParabolDatepickerComponent implements AfterViewChecked {
   public openDatepicker: boolean;
   public dateInput: any;
   public month: string;
@@ -59,7 +58,6 @@ export class ConichiDatepickerComponent implements AfterViewChecked {
   @Input() years: string;
   @Input() time: boolean;
   @Input() offset: number;
-  @Input() i18n: I18n;
 
   constructor(private cdr: ChangeDetectorRef, private elem: ElementRef) {
     elem.nativeElement.onkeyup = (elem) => {

@@ -3,11 +3,11 @@ import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 // Import custom components
-import { ConichiSelectButtonComponent } from './select-button.component';
+import { ParabolSelectButtonComponent } from './select-button.component';
 
 
 /*
-* @NgModule: ConichiSelectButtonModule
+* @NgModule: ParabolSelectButtonModule
 *
 * An NgModule is a class adorned with the @NgModule decorator function. @NgModule takes a metadata
 * object that tells Angular how to compile and run module code. It identifies the module's own
@@ -17,8 +17,8 @@ import { ConichiSelectButtonComponent } from './select-button.component';
 
 @NgModule({
   imports: [ BrowserModule ],
-  exports: [ ConichiSelectButtonComponent ],
-  declarations: [ ConichiSelectButtonComponent ],
+  exports: [ ParabolSelectButtonComponent ],
+  declarations: [ ParabolSelectButtonComponent ],
   schemas: [ CUSTOM_ELEMENTS_SCHEMA ]
 })
-export class ConichiSelectButtonModule { }
+export class ParabolSelectButtonModule { }

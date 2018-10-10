@@ -4,12 +4,12 @@ import { FormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 
 // Import custom components
-import { ConichiRadioComponent } from './radio.component';
+import { ParabolRadioComponent } from './radio.component';
 
 
 
 /*
-* @NgModule: ConichiRadioModule
+* @NgModule: ParabolRadioModule
 *
 * An NgModule is a class adorned with the @NgModule decorator function. @NgModule takes a metadata
 * object that tells Angular how to compile and run module code. It identifies the module's own
@@ -22,7 +22,7 @@ import { ConichiRadioComponent } from './radio.component';
     BrowserModule,
     FormsModule
   ],
-  exports: [ ConichiRadioComponent ],
-  declarations: [ ConichiRadioComponent ]
+  exports: [ ParabolRadioComponent ],
+  declarations: [ ParabolRadioComponent ]
 })
-export class ConichiRadioModule { }
+export class ParabolRadioModule { }

@@ -1,15 +1,15 @@
 <div class="input-container" (click)="openDatepicker = true">
-  <conichi-text placeholder="{{ placeholder }}" [(model)]="dateInput"></conichi-text>
+  <parabol-text placeholder="{{ placeholder }}" [(model)]="dateInput"></parabol-text>
   <fa name="calendar" class="calendar"></fa>
 </div>
 
-<conichi-modal *ngIf="openDatepicker">
+<parabol-modal *ngIf="openDatepicker">
   <modal-container>
     <modal-content>
       <div class="selection" *ngIf="!displayTime">
         <div class="header">
-          <conichi-select-button placeholder="Month" [options]="monthsOptions" [(model)]="month"></conichi-select-button>
-          <conichi-select-button placeholder="Year" [options]="yearOptions" [(model)]="year"></conichi-select-button>
+          <parabol-select-button placeholder="Month" [options]="monthsOptions" [(model)]="month"></parabol-select-button>
+          <parabol-select-button placeholder="Year" [options]="yearOptions" [(model)]="year"></parabol-select-button>
         </div>
 
         <div class="weekdays">
@@ -37,22 +37,22 @@
 
         <div>
           <div class="half">
-            <conichi-select-button [placeholder]="i18n?.material_datepicker_hour || 'Hour'"
+            <parabol-select-button [placeholder]="i18n?.material_datepicker_hour || 'Hour'"
                                    [options]="hoursArray"
                                    (click)="checkTime()"
                                    [(model)]="hour">
-            </conichi-select-button>
+            </parabol-select-button>
           </div>
 
           <div class="half">
-            <conichi-select-button [placeholder]="i18n?.material_datepicker_minute || 'Minute'"
+            <parabol-select-button [placeholder]="i18n?.material_datepicker_minute || 'Minute'"
                                    [options]="minutesArray"
                                    (click)="checkTime()"
                                    [(model)]="minute">
-            </conichi-select-button>
+            </parabol-select-button>
           </div>
         </div>
       </div>
     </modal-content>
   </modal-container>
-</conichi-modal>
+</parabol-modal>

@@ -3,20 +3,20 @@ import { Component, Input, Output, EventEmitter, AfterViewChecked, ChangeDetecto
 
 
 /*
-* @Component: ConichiSliderComponent
+* @Component: ParabolSliderComponent
 *
 * Components are the main way we build and specify elements and logic on the page, through both
 * custom elements and attributes that add functionality to our existing components.
 * 
-* This component is used to build Conichi Material Slider component.
+* This component is used to build Parabol Material Slider component.
 */
 
 @Component({
-  selector: 'conichi-slider',
+  selector: 'parabol-slider',
   templateUrl: './slider.html'
 })
 
-export class ConichiSliderComponent implements AfterViewChecked {
+export class ParabolSliderComponent implements AfterViewChecked {
   @Output() modelChange = new EventEmitter();
   @Input() placeholder: string;
   @Input() prefix: string;

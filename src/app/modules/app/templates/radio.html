@@ -1,10 +1,10 @@
 <h2>Radio</h2>
 
 <div class="inner-container">
-  <conichi-radio [(model)]="data"
+  <parabol-radio [(model)]="data"
                  [options]="radio_options"
                  keys="label_alt, value_alt">
-  </conichi-radio>
+  </parabol-radio>
 
   <p class="output-box"><span>Output:</span> {{ data }}</p>
 </div>
@@ -14,10 +14,10 @@
 
   <pre><code highlight>
 <![CDATA[
-<conichi-radio [options]="radio_options"
+<parabol-radio [options]="radio_options"
                keys="label_alt, value_alt"
                [(model)]="data">
-</conichi-radio>
+</parabol-radio>
 ]]>
 </code></pre>
 
@@ -35,5 +35,5 @@
     <span>model</span><br>Used for 2 way data binding.
   </p>
 
-  <conichi-checkbox class="prefill" label="Prefill input" value="true" [(model)]="prefill"></conichi-checkbox>
+  <parabol-checkbox class="prefill" label="Prefill input" value="true" [(model)]="prefill"></parabol-checkbox>
 </div>

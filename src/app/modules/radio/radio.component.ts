@@ -2,19 +2,19 @@ import { Component, Input, Output, EventEmitter, AfterViewChecked, ChangeDetecto
 
 
 /*
-* @Component: ConichiRadioComponent
+* @Component: ParabolRadioComponent
 *
 * Components are the main way we build and specify elements and logic on the page, through both
 * custom elements and attributes that add functionality to our existing components.
 * 
-* This component is used to build Conichi Material Checkbox.
+* This component is used to build Parabol Material Checkbox.
 */
 
 @Component({
-  selector: 'conichi-radio',
+  selector: 'parabol-radio',
   templateUrl: './radio.html'
 })
-export class ConichiRadioComponent implements AfterViewChecked {
+export class ParabolRadioComponent implements AfterViewChecked {
   private formattedOptions: any;
 
   @Output() modelChange = new EventEmitter();

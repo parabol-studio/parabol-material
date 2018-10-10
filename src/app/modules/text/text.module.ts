@@ -3,7 +3,7 @@ import { FormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 import { AngularFontAwesomeModule } from 'angular-font-awesome';
 
-import { ConichiTextComponent } from './text.component';
+import { ParabolTextComponent } from './text.component';
 
 @NgModule({
   imports: [
@@ -11,8 +11,8 @@ import { ConichiTextComponent } from './text.component';
     BrowserModule,
     AngularFontAwesomeModule
   ],
-  exports: [ ConichiTextComponent ],
-  declarations: [ ConichiTextComponent ],
+  exports: [ ParabolTextComponent ],
+  declarations: [ ParabolTextComponent ],
   schemas: [ CUSTOM_ELEMENTS_SCHEMA ]
 })
-export class ConichiTextModule { }
+export class ParabolTextModule { }

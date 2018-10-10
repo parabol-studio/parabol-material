@@ -3,8 +3,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { HighlightModule } from 'ngx-highlightjs';
 
 // Import custom modules
-import { ConichiCheckboxModule } from '../../checkbox/checkbox.module';
-import { ConichiTextareaModule } from '../../textarea/textarea.module';
+import { ParabolCheckboxModule } from '../../checkbox/checkbox.module';
+import { ParabolTextareaModule } from '../../textarea/textarea.module';
 
 // Import custom components
 import { TextareaComponent } from '../components/textarea.component';
@@ -13,8 +13,8 @@ import { TextareaComponent } from '../components/textarea.component';
 @NgModule({
   imports: [
     BrowserModule,
-    ConichiTextareaModule,
-    ConichiCheckboxModule,
+    ParabolTextareaModule,
+    ParabolCheckboxModule,
     HighlightModule.forRoot({ theme: 'color-brewer' })
   ],
   exports: [ TextareaComponent ],

@@ -3,12 +3,11 @@ import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 // Import custom components
-import { ConichiSidebarDirective } from './sidebar.directive';
-import { ConichiSidebarUserComponent } from './sidebar.component';
+import { ParabolSidebarDirective } from './sidebar.directive';
 
 
 /*
-* @NgModule: ConichiSidebarModule
+* @NgModule: ParabolSidebarModule
 *
 * An NgModule is a class adorned with the @NgModule decorator function. @NgModule takes a metadata
 * object that tells Angular how to compile and run module code. It identifies the module's own
@@ -18,14 +17,8 @@ import { ConichiSidebarUserComponent } from './sidebar.component';
 
 @NgModule({
   imports: [ BrowserModule ],
-  exports: [
-    ConichiSidebarDirective,
-    ConichiSidebarUserComponent
-  ],
-  declarations: [
-    ConichiSidebarDirective,
-    ConichiSidebarUserComponent
-  ],
+  exports: [ ParabolSidebarDirective ],
+  declarations: [ ParabolSidebarDirective ],
   schemas: [ CUSTOM_ELEMENTS_SCHEMA ]
 })
-export class ConichiSidebarModule { }
+export class ParabolSidebarModule { }

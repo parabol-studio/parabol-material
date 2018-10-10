@@ -3,17 +3,17 @@ import { Component, Input } from '@angular/core';
 
 
 /*
-* @Component: ConichiPendingComponent
+* @Component: ParabolPendingComponent
 *
 * Components are the main way we build and specify elements and logic on the page, through both
 * custom elements and attributes that add functionality to our existing components.
 */
 
 @Component({
-  selector: 'conichi-pending',
+  selector: 'parabol-pending',
   templateUrl: './pending.html'
 })
 
-export class ConichiPendingComponent {
+export class ParabolPendingComponent {
   @Input() pending: any;
 }

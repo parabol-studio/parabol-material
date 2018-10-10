@@ -3,7 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { HighlightModule } from 'ngx-highlightjs';
 
 // Import custom modules
-import { ConichiNotificationModule } from '../../notification/notification.module';
+import { ParabolNotificationModule } from '../../notification/notification.module';
 
 // Import custom components
 import { NotificationComponent } from '../components/notification.component';
@@ -12,7 +12,7 @@ import { NotificationComponent } from '../components/notification.component';
 @NgModule({
   imports: [
     BrowserModule,
-    ConichiNotificationModule,
+    ParabolNotificationModule,
     HighlightModule.forRoot({ theme: 'color-brewer' })
   ],
   exports: [ NotificationComponent ],

@@ -5,19 +5,19 @@ import { xor } from 'lodash';
 
 
 /*
-* @Component: ConichiCheckboxComponent
+* @Component: ParabolCheckboxComponent
 *
 * Components are the main way we build and specify elements and logic on the page, through both
 * custom elements and attributes that add functionality to our existing components.
 * 
-* This component is used to build Conichi Material Checkbox.
+* This component is used to build Parabol Material Checkbox.
 */
 
 @Component({
-  selector: 'conichi-checkbox-group',
+  selector: 'parabol-checkbox-group',
   templateUrl: './checkbox_group.html'
 })
-export class ConichiCheckboxGroupComponent implements AfterViewChecked {
+export class ParabolCheckboxGroupComponent implements AfterViewChecked {
   @Output() modelChange = new EventEmitter();
   @Input() model: Array<any>;
   @Input() options: any;

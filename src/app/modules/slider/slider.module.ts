@@ -4,11 +4,11 @@ import { FormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 
 // Import custom components
-import { ConichiSliderComponent } from './slider.component';
+import { ParabolSliderComponent } from './slider.component';
 
 
 /*
-* @NgModule: ConichiSliderModule
+* @NgModule: ParabolSliderModule
 *
 * An NgModule is a class adorned with the @NgModule decorator function. @NgModule takes a metadata
 * object that tells Angular how to compile and run module code. It identifies the module's own
@@ -21,8 +21,8 @@ import { ConichiSliderComponent } from './slider.component';
     FormsModule,
     BrowserModule
   ],
-  exports: [ ConichiSliderComponent ],
-  declarations: [ ConichiSliderComponent ],
+  exports: [ ParabolSliderComponent ],
+  declarations: [ ParabolSliderComponent ],
   schemas: [ CUSTOM_ELEMENTS_SCHEMA ]
 })
-export class ConichiSliderModule { }
+export class ParabolSliderModule { }

@@ -2,11 +2,11 @@ import { Component, Input, Output, EventEmitter, ViewChild, ElementRef } from '@
 
 
 @Component({
-  selector: 'conichi-textarea',
+  selector: 'parabol-textarea',
   templateUrl: './textarea.html'
 })
 
-export class ConichiTextareaComponent {
+export class ParabolTextareaComponent {
   @Output() modelChange = new EventEmitter();
   @Input() placeholder: string;
   @Input() model: string;

@@ -3,7 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { HighlightModule } from 'ngx-highlightjs';
 
 // Import custom modules
-import { ConichiCheckboxModule } from '../../checkbox/checkbox.module';
+import { ParabolCheckboxModule } from '../../checkbox/checkbox.module';
 
 // Import custom components
 import { CheckboxComponent } from '../components/checkbox.component';
@@ -12,7 +12,7 @@ import { CheckboxComponent } from '../components/checkbox.component';
 @NgModule({
   imports: [
     BrowserModule,
-    ConichiCheckboxModule,
+    ParabolCheckboxModule,
     HighlightModule.forRoot({ theme: 'color-brewer' })
   ],
   exports: [ CheckboxComponent ],

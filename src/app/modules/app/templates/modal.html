@@ -3,7 +3,7 @@
 <div class="inner-container">
   <a class="open-modal button" (click)="modal = !modal">Open Modal Box</a>
 
-  <conichi-modal *ngIf="modal">
+  <parabol-modal *ngIf="modal">
     <modal-container>
       <modal-content>
         <h2>Hello</h2>
@@ -12,7 +12,7 @@
 
       <modal-footer type="prompt" (model)="modal = $event" (onConfirm)="cl('success')" (onCancel)="cl('canceled')"></modal-footer>
     </modal-container>
-  </conichi-modal>
+  </parabol-modal>
 </div>
 
 <div class="outer-container">
@@ -20,7 +20,7 @@
 
   <pre><code highlight>
 <![CDATA[
-<conichi-modal *ngIf="modal">
+<parabol-modal *ngIf="modal">
   <modal-container>
     <modal-content>
       <h2>Hello</h2>
@@ -29,7 +29,7 @@
 
     <modal-footer type="prompt" (model)="modal = $event" [i18n]="i18n" (onConfirm)="cl('success')"></modal-footer>
   </modal-container>
-</conichi-modal>
+</parabol-modal>
 ]]>
 </code></pre>
 

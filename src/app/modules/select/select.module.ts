@@ -4,14 +4,14 @@ import { FormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 
 // Import custom components
-import { ConichiSelectComponent } from './select.component';
+import { ParabolSelectComponent } from './select.component';
 
 // Import custom modules
-import { ConichiTextModule } from '../text/text.module';
+import { ParabolTextModule } from '../text/text.module';
 
 
 /*
-* @NgModule: ConichiSelectModule
+* @NgModule: ParabolSelectModule
 *
 * An NgModule is a class adorned with the @NgModule decorator function. @NgModule takes a metadata
 * object that tells Angular how to compile and run module code. It identifies the module's own
@@ -25,10 +25,10 @@ import { ConichiTextModule } from '../text/text.module';
   imports: [
     FormsModule,
     BrowserModule,
-    ConichiTextModule
+    ParabolTextModule
   ],
-  exports: [ ConichiSelectComponent ],
-  declarations: [ ConichiSelectComponent ],
+  exports: [ ParabolSelectComponent ],
+  declarations: [ ParabolSelectComponent ],
   schemas: [ CUSTOM_ELEMENTS_SCHEMA ]
 })
-export class ConichiSelectModule { }
+export class ParabolSelectModule { }

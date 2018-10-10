@@ -3,8 +3,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { HighlightModule } from 'ngx-highlightjs';
 
 // Import custom modules
-import { ConichiCheckboxModule } from '../../checkbox/checkbox.module';
-import { ConichiSelectButtonModule } from '../../select-button/select-button.module';
+import { ParabolCheckboxModule } from '../../checkbox/checkbox.module';
+import { ParabolSelectButtonModule } from '../../select-button/select-button.module';
 
 // Import custom components
 import { SelectButtonComponent } from '../components/select-button.component';
@@ -13,8 +13,8 @@ import { SelectButtonComponent } from '../components/select-button.component';
 @NgModule({
   imports: [
     BrowserModule,
-    ConichiCheckboxModule,
-    ConichiSelectButtonModule,
+    ParabolCheckboxModule,
+    ParabolSelectButtonModule,
     HighlightModule.forRoot({ theme: 'color-brewer' })
   ],
   exports: [ SelectButtonComponent ],

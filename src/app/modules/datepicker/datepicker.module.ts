@@ -6,16 +6,16 @@ import { AngularFontAwesomeModule } from 'angular-font-awesome';
 import { DatePipe } from '@angular/common';
 
 // Import custom components
-import { ConichiDatepickerComponent } from './datepicker.component';
+import { ParabolDatepickerComponent } from './datepicker.component';
 
 // Import custom modules
-import { ConichiTextModule } from '../text/text.module';
-import { ConichiModalModule } from '../modal/modal.module';
-import { ConichiSelectButtonModule } from '../select-button/select-button.module';
+import { ParabolTextModule } from '../text/text.module';
+import { ParabolModalModule } from '../modal/modal.module';
+import { ParabolSelectButtonModule } from '../select-button/select-button.module';
 
 
 /*
-* @NgModule: ConichiDatepickerModule
+* @NgModule: ParabolDatepickerModule
 *
 * An NgModule is a class adorned with the @NgModule decorator function. @NgModule takes a metadata
 * object that tells Angular how to compile and run module code. It identifies the module's own
@@ -30,13 +30,13 @@ import { ConichiSelectButtonModule } from '../select-button/select-button.module
     FormsModule,
     BrowserModule,
     AngularFontAwesomeModule,
-    ConichiTextModule,
-    ConichiModalModule,
-    ConichiSelectButtonModule
+    ParabolTextModule,
+    ParabolModalModule,
+    ParabolSelectButtonModule
   ],
-  exports: [ ConichiDatepickerComponent ],
-  declarations: [ ConichiDatepickerComponent ],
+  exports: [ ParabolDatepickerComponent ],
+  declarations: [ ParabolDatepickerComponent ],
   providers: [ DatePipe ],
   schemas: [ CUSTOM_ELEMENTS_SCHEMA ]
 })
-export class ConichiDatepickerModule { }
+export class ParabolDatepickerModule { }

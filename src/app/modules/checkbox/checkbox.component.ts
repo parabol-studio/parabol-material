@@ -2,19 +2,19 @@ import { Component, Input, Output, EventEmitter } from '@angular/core';
 
 
 /*
-* @Component: ConichiCheckboxComponent
+* @Component: ParabolCheckboxComponent
 *
 * Components are the main way we build and specify elements and logic on the page, through both
 * custom elements and attributes that add functionality to our existing components.
 * 
-* This component is used to build Conichi Material Checkbox.
+* This component is used to build Parabol Material Checkbox.
 */
 
 @Component({
-  selector: 'conichi-checkbox',
+  selector: 'parabol-checkbox',
   templateUrl: './checkbox.html'
 })
-export class ConichiCheckboxComponent {
+export class ParabolCheckboxComponent {
   @Output() modelChange = new EventEmitter();
   @Input() model: string;
   @Input() value: string;

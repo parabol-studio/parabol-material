@@ -3,8 +3,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { HighlightModule } from 'ngx-highlightjs';
 
 // Import custom modules
-import { ConichiCheckboxModule } from '../../checkbox/checkbox.module';
-import { ConichiDatepickerModule } from '../../datepicker/datepicker.module';
+import { ParabolCheckboxModule } from '../../checkbox/checkbox.module';
+import { ParabolDatepickerModule } from '../../datepicker/datepicker.module';
 
 // Import custom components
 import { DatepickerComponent } from '../components/datepicker.component';
@@ -13,8 +13,8 @@ import { DatepickerComponent } from '../components/datepicker.component';
 @NgModule({
   imports: [
     BrowserModule,
-    ConichiCheckboxModule,
-    ConichiDatepickerModule,
+    ParabolCheckboxModule,
+    ParabolDatepickerModule,
     HighlightModule.forRoot({ theme: 'color-brewer' })
   ],
   exports: [ DatepickerComponent ],

@@ -3,7 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { HighlightModule } from 'ngx-highlightjs';
 
 // Import custom modules
-import { ConichiPendingModule } from '../../pending/pending.module';
+import { ParabolPendingModule } from '../../pending/pending.module';
 
 // Import custom components
 import { PendingComponent } from '../components/pending.component';
@@ -12,7 +12,7 @@ import { PendingComponent } from '../components/pending.component';
 @NgModule({
   imports: [
     BrowserModule,
-    ConichiPendingModule,
+    ParabolPendingModule,
     HighlightModule.forRoot({ theme: 'color-brewer' })
   ],
   exports: [ PendingComponent ],

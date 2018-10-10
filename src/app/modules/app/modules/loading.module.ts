@@ -3,7 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { HighlightModule } from 'ngx-highlightjs';
 
 // Import custom modules
-import { ConichiLoadingModule } from '../../loading/loading.module';
+import { ParabolLoadingModule } from '../../loading/loading.module';
 
 // Import custom components
 import { LoadingComponent } from '../components/loading.component';
@@ -12,7 +12,7 @@ import { LoadingComponent } from '../components/loading.component';
 @NgModule({
   imports: [
     BrowserModule,
-    ConichiLoadingModule,
+    ParabolLoadingModule,
     HighlightModule.forRoot({ theme: 'color-brewer' })
   ],
   exports: [ LoadingComponent ],

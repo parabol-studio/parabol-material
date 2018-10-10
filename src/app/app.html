@@ -1,42 +1,78 @@
 <div id="app">
-  <conichi-sidebar>
-    <conichi-sidebar-menu>
-      <conichi-sidebar-user [session]="session"></conichi-sidebar-user>
+  <parabol-sidebar>
+    <parabol-menu-item (click)="selection = 'sidebar'">
+      <fa name="bars"></fa>
+      <a>Sidebar</a>
+    </parabol-menu-item>
 
-      <conichi-sidebar-header>Design</conichi-sidebar-header>
-      <a (click)="selection = 'styleguide'">Styleguide <span>WIP</span></a>
+    <parabol-menu-item (click)="selection = 'text'">
+      <fa name="font"></fa>
+      <a>Text Input</a>
+    </parabol-menu-item>
 
-      <conichi-sidebar-header>Layouts</conichi-sidebar-header>
-      <a (click)="selection = 'sidebar'">Sidebar</a>
-      <a (click)="selection = 'footer'">Footer</a>
+    <parabol-menu-item (click)="selection = 'textarea'">
+      <fa name="square"></fa>
+      <a>Textarea Input</a>
+    </parabol-menu-item>
 
-      <conichi-sidebar-header>Inputs</conichi-sidebar-header>
-      <a (click)="selection = 'text'">Text Input</a>
-      <a (click)="selection = 'textarea'">Textarea Input</a>
-      <a (click)="selection = 'date'">Datepicker</a>
-      <a (click)="selection = 'checkbox'">Checkbox</a>
-      <a (click)="selection = 'checkbox-group'">Checkbox Group</a>
-      <a (click)="selection = 'radio'">Radio</a>
-      <a (click)="selection = 'currency'">Currency</a>
-      <a (click)="selection = 'select'">Select</a>
-      <a (click)="selection = 'slider'">Slider</a>
-      <a (click)="selection = 'select-button'">Select Button</a>
+    <parabol-menu-item (click)="selection = 'date'">
+      <fa name="calendar"></fa>
+      <a>Datepicker</a>
+    </parabol-menu-item>
 
-      <conichi-sidebar-header>Elements</conichi-sidebar-header>
-      <a (click)="selection = 'modal'">Modal Box</a>
-      <a (click)="selection = 'notification'">Notification</a>
-      <a (click)="selection = 'loading'">Loading Screen</a>
-      <a (click)="selection = 'pending'">Pending</a>
-      <a (click)="selection = 'reservation'">Reservation</a>
-      <a (click)="selection = 'notice'">Notice</a>
-      <a (click)="selection = 'progress'">Progress</a>
-    </conichi-sidebar-menu>
-  </conichi-sidebar>
+    <parabol-menu-item (click)="selection = 'checkbox'">
+      <fa name="check"></fa>
+      <a>Checkbox</a>
+    </parabol-menu-item>
 
-  <conichi-sidebar-content>
-    <h1 class="heading">Conichi Material</h1>
+    <parabol-menu-item (click)="selection = 'checkbox-group'">
+      <fa name="check-square"></fa>
+      <a>Checkbox Group</a>
+    </parabol-menu-item>
 
-    <app-styleguide *ngIf="selection === 'styleguide'"></app-styleguide>
+    <parabol-menu-item (click)="selection = 'radio'">
+      <fa name="circle"></fa>
+      <a>Radio</a>
+    </parabol-menu-item>
+
+    <parabol-menu-item (click)="selection = 'select'">
+      <fa name="list"></fa>
+      <a>Select</a>
+    </parabol-menu-item>
+
+    <parabol-menu-item (click)="selection = 'select-button'">
+      <fa name="th-list"></fa>
+      <a>Select Button</a>
+    </parabol-menu-item>
+
+    <parabol-menu-item (click)="selection = 'slider'">
+      <fa name="toggle-on"></fa>
+      <a>Slider</a>
+    </parabol-menu-item>
+
+    <parabol-menu-item (click)="selection = 'modal'">
+      <fa name="square"></fa>
+      <a>Modal Box</a>
+    </parabol-menu-item>
+
+    <parabol-menu-item (click)="selection = 'notification'">
+      <fa name="bell"></fa>
+      <a>Notification</a>
+    </parabol-menu-item>
+
+    <parabol-menu-item (click)="selection = 'loading'">
+      <fa name="spinner"></fa>
+      <a>Loading Screen</a>
+    </parabol-menu-item>
+
+    <parabol-menu-item (click)="selection = 'pending'">
+      <fa name="ellipsis-h"></fa>
+      <a>Pending</a>
+    </parabol-menu-item>
+  </parabol-sidebar>
+
+  <parabol-sidebar-content>
+    <h1 class="heading">Parabol Material</h1>
 
     <app-text *ngIf="selection === 'text'"></app-text>
     <app-textarea *ngIf="selection === 'textarea'"></app-textarea>
@@ -44,20 +80,13 @@
     <app-checkbox *ngIf="selection === 'checkbox'"></app-checkbox>
     <app-checkbox-group *ngIf="selection === 'checkbox-group'"></app-checkbox-group>
     <app-radio *ngIf="selection === 'radio'"></app-radio>
-    <app-currency *ngIf="selection === 'currency'"></app-currency>
     <app-select *ngIf="selection === 'select'"></app-select>
     <app-slider *ngIf="selection === 'slider'"></app-slider>
     <app-modal *ngIf="selection === 'modal'"></app-modal>
     <app-notification *ngIf="selection === 'notification'"></app-notification>
     <app-loading *ngIf="selection === 'loading'"></app-loading>
     <app-pending *ngIf="selection === 'pending'"></app-pending>
-    <app-reservation *ngIf="selection === 'reservation'"></app-reservation>
-    <app-notice *ngIf="selection === 'notice'"></app-notice>
     <app-select-button *ngIf="selection === 'select-button'"></app-select-button>
-    <app-progress *ngIf="selection === 'progress'"></app-progress>
     <app-sidebar *ngIf="selection === 'sidebar'"></app-sidebar>
-    <app-footer *ngIf="selection === 'footer'"></app-footer>
-    <app-hero *ngIf="selection === 'hero'"></app-hero>
-    <app-avatar *ngIf="selection === 'avatar'"></app-avatar>
-  </conichi-sidebar-content>
+  </parabol-sidebar-content>
 </div>

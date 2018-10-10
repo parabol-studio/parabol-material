@@ -1,6 +1,6 @@
 {
-  "name": "conichi-material",
-  "version": "1.21.7",
+  "name": "parabol-material",
+  "version": "1.0.0",
   "license": "MIT",
   "scripts": {
     "dev": "ng serve --port 5000 --open",

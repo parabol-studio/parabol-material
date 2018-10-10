@@ -4,11 +4,11 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { BrowserModule } from '@angular/platform-browser';
 
 // Import custom components
-import { ConichiLoadingComponent } from './loading.component';
+import { ParabolLoadingComponent } from './loading.component';
 
 
 /*
-* @NgModule: ConichiLoadingModule
+* @NgModule: ParabolLoadingModule
 *
 * An NgModule is a class adorned with the @NgModule decorator function. @NgModule takes a metadata
 * object that tells Angular how to compile and run module code. It identifies the module's own
@@ -21,8 +21,8 @@ import { ConichiLoadingComponent } from './loading.component';
     BrowserModule,
     BrowserAnimationsModule
   ],
-  exports: [ ConichiLoadingComponent ],
-  declarations: [ ConichiLoadingComponent ],
+  exports: [ ParabolLoadingComponent ],
+  declarations: [ ParabolLoadingComponent ],
   schemas: [ CUSTOM_ELEMENTS_SCHEMA ]
 })
-export class ConichiLoadingModule { }
+export class ParabolLoadingModule { }

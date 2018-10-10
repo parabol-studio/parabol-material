@@ -4,13 +4,13 @@ import { AngularFontAwesomeModule } from 'angular-font-awesome';
 
 
 // Import custom components
-import { ConichiCheckboxComponent } from './checkbox.component';
+import { ParabolCheckboxComponent } from './checkbox.component';
 
 
 @NgModule({
   imports: [ BrowserModule, AngularFontAwesomeModule ],
-  exports: [ ConichiCheckboxComponent ],
-  declarations: [ ConichiCheckboxComponent ],
+  exports: [ ParabolCheckboxComponent ],
+  declarations: [ ParabolCheckboxComponent ],
   schemas: [ CUSTOM_ELEMENTS_SCHEMA ]
 })
-export class ConichiCheckboxModule { }
+export class ParabolCheckboxModule { }

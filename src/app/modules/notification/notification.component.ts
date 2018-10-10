@@ -3,20 +3,20 @@ import { Component, Input, OnChanges } from '@angular/core';
 
 
 /*
-* @Component: ConichiNotificationComponent
+* @Component: ParabolNotificationComponent
 *
 * Components are the main way we build and specify elements and logic on the page, through both
 * custom elements and attributes that add functionality to our existing components.
 * 
-* This component is used to build Conichi Material Currency input.
+* This component is used to build Parabol Material Currency input.
 */
 
 @Component({
-  selector: 'conichi-notification',
+  selector: 'parabol-notification',
   templateUrl: './notification.html'
 })
 
-export class ConichiNotificationComponent implements OnChanges {
+export class ParabolNotificationComponent implements OnChanges {
   @Input() data: Object;
 
   ngOnChanges() {

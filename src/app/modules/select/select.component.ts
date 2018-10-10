@@ -3,20 +3,20 @@ import { Component, Input, Output, EventEmitter, HostListener, OnChanges } from 
 
 
 /*
-* @Component: ConichiSelectComponent
+* @Component: ParabolSelectComponent
 *
 * Components are the main way we build and specify elements and logic on the page, through both
 * custom elements and attributes that add functionality to our existing components.
 * 
-* This component is used to build Conichi Material Select component.
+* This component is used to build Parabol Material Select component.
 */
 
 @Component({
-  selector: 'conichi-select',
+  selector: 'parabol-select',
   templateUrl: './select.html'
 })
 
-export class ConichiSelectComponent implements OnChanges {
+export class ParabolSelectComponent implements OnChanges {
   public openDropdown: boolean;
   public displayValue: any;
 

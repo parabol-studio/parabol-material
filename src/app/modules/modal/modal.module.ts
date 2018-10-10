@@ -3,11 +3,11 @@ import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 // Import custom components
-import { ConichiModalFooterComponent } from './modal.component';
+import { ParabolModalFooterComponent } from './modal.component';
 
 
 /*
-* @NgModule: ConichiModalModule
+* @NgModule: ParabolModalModule
 *
 * An NgModule is a class adorned with the @NgModule decorator function. @NgModule takes a metadata
 * object that tells Angular how to compile and run module code. It identifies the module's own
@@ -18,8 +18,8 @@ import { ConichiModalFooterComponent } from './modal.component';
 
 @NgModule({
   imports: [ BrowserModule ],
-  exports: [ ConichiModalFooterComponent ],
-  declarations: [ ConichiModalFooterComponent ],
+  exports: [ ParabolModalFooterComponent ],
+  declarations: [ ParabolModalFooterComponent ],
   schemas: [ CUSTOM_ELEMENTS_SCHEMA ]
 })
-export class ConichiModalModule { }
+export class ParabolModalModule { }

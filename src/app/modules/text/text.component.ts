@@ -12,11 +12,11 @@ import {
 
 
 @Component({
-  selector: 'conichi-text',
+  selector: 'parabol-text',
   templateUrl: './text.html'
 })
 
-export class ConichiTextComponent implements AfterViewChecked, OnInit {
+export class ParabolTextComponent implements AfterViewChecked, OnInit {
   public controlType: string;
   public maskArray: Array<any>;
   public maskControlArray: Array<any>;
