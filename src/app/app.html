@@ -4,6 +4,11 @@
       <fa name="bars"></fa>
       <a>Sidebar</a>
     </parabol-menu-item>
+  
+    <parabol-menu-item (click)="selection = 'display'">
+      <fa name="columns"></fa>
+      <a>Display</a>
+    </parabol-menu-item>
 
     <parabol-menu-item (click)="selection = 'text'">
       <fa name="font"></fa>
@@ -88,5 +93,6 @@
     <app-pending *ngIf="selection === 'pending'"></app-pending>
     <app-select-button *ngIf="selection === 'select-button'"></app-select-button>
     <app-sidebar *ngIf="selection === 'sidebar'"></app-sidebar>
+    <app-display *ngIf="selection === 'display'"></app-display>
   </parabol-sidebar-content>
 </div>

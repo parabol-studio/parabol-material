@@ -10,6 +10,6 @@ export class AppComponent {
   public selection: string;
 
   constructor() {    
-    this.selection = 'text';
+    this.selection = 'display';
   }
 }

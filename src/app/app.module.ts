@@ -17,6 +17,7 @@ import { LoadingModule } from './modules/app/modules/loading.module';
 import { PendingModule } from './modules/app/modules/pending.module';
 import { SelectButtonModule } from './modules/app/modules/select-button.module';
 import { SidebarModule } from './modules/app/modules/sidebar.module';
+import { DisplayModule } from './modules/app/modules/display.module';
 
 import { ParabolSidebarModule } from './modules/sidebar/sidebar.module';
 
@@ -43,6 +44,7 @@ import { AppComponent } from './app.component';
     PendingModule,
     SelectButtonModule,
     SidebarModule,
+    DisplayModule,
     ParabolSidebarModule
   ],
   bootstrap: [ AppComponent ],
